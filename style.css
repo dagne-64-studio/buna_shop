@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4A90E2;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+nav a, nav button {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #2B6CB0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav a:hover, nav button:hover {
+    background: #1A4A80;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f2f2f2;
+}
+
+.hero-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.features div {
+    flex: 1 1 300px;
+    margin: 1rem;
+    padding: 1rem;
+    background: #e8f0fe;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #4A90E2;
+    color: white;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+}
